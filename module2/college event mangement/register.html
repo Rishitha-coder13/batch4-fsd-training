@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">College Events</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="register.html">Register</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Event Registration</h1>
+        <p>Register for your favorite college event.</p>
+    </section>
+
+    <section class="form-container">
+
+        <form id="registrationForm">
+
+            <label for="name">Student Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+            >
+
+            <label for="college">College Name</label>
+            <input
+                type="text"
+                id="college"
+                placeholder="Enter your college name"
+                required
+            >
+
+            <label for="event">Select Event</label>
+
+            <select id="event" required>
+                <option value="">-- Select Event --</option>
+                <option value="Tech Fest 2026">Tech Fest 2026</option>
+                <option value="Cultural Fest">Cultural Fest</option>
+                <option value="Sports Meet">Sports Meet</option>
+                <option value="AI Workshop">AI Workshop</option>
+            </select>
+
+            <label for="department">Department</label>
+
+            <select id="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science</option>
+                <option value="AIDS">AI & Data Science</option>
+                <option value="ECE">Electronics</option>
+                <option value="EEE">Electrical</option>
+                <option value="MECH">Mechanical</option>
+                <option value="CIVIL">Civil</option>
+            </select>
+
+            <button type="submit" class="btn">
+                Submit Registration
+            </button>
+
+        </form>
+
+        <p id="registrationMessage"></p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 College Event Management | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
